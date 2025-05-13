@@ -162,11 +162,6 @@ for test_number in range(n, 1001):
             bestpath.reverse()
             posited_bi_tags = bestpath
 
-            # Here, we count conditional frequencies so that we can calculate the B matrix later.
-
-            for i in range(len(syllables)):
-                B[syllables[i]][actual_bi_tags[i]] += 1
-
             # Here, we will count true/false positives/negatives.
 
             for i in range(len(syllables) - 1):
